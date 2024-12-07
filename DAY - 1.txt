@@ -1,0 +1,188 @@
+1. Introduction to salesforce.
+
+what is salesforce ?
+-it is cloud based CRM
+- salesforce is used to automate the business process. 
+- it is used for organized and unorganized (business) 
+- it can be sales process, service process, hospital, school, 
+b2b cloud, b2c cloud, and also customize the unorganized business. 
+----------------------
+Application / website is created by frontend and backend.
+what is Server ? 
+which IT company holds access to banking segment in india ? Infosys. 
+International websites, passport website, protocols - TCS
+
+inside application we have production and Sandbox or Testing environment.
+
+login.salesforce.com - Production
+Test.salesforce.com - Sandbox (Testing Environment) 
+
+what is Production ? 
+live application that people see.
+
+what is Sandbox ?
+- Sandbox is copy of live env of production. Any changes req in app is done here. 
+Server is made low and whole companies website is not stopped but just the 
+section where changes were required, there the server is made slow. 
+- we can create multiple sand box( login pwd) under 1 production. 
+
+Devops engineer's job is changes are pushed from testing to live, they integrate. 
+
+----------------------------------------------
+
+gobal IP Ranges 
+
+go to Profiles - login IP ranges - 
+
+IP ? how it works ? 
+restriction - you can open this software only here and in this devices they work. not anywhere else they are being restricted to work u can only open this app only on this computer and with in this IP ranges 
+
+gobla IP Ranges - i can stay out of country and access the portal no restriction. with IP we can track what we are doing. 
+---------------------------------------------
+
+in org - we have lightning and classic 
+
+why company came up with lightning ? 
+- UI is faster in lightning than in classic.
+why is UI faster ? 
+classics loads from server directly but lightning loads form frontend javascript what ever is stored in memory in the backend it will send that first so the work is not stopped the new changes will be updated in few mins. 
+
+what does javascript do ?
+how it uploads ? - it takes commands that some changes are created and gives commands to backend that changes have been made - it will take few sec time but since the old data is there in lightning already and it will keep sinking with the new data form backend. 
+js - responce is very faster 
+
+solution - we can refresh or change display density to Comfy and Compact and check if new data is sinked and it loads from Server. 
+
+CASH MEMORY - temporary memory which stores data and is in database when loads to show old data.
+
+----------------------------------------------------
+- Navigation of Home Page 
+- classic and lightning(imp)
+- Tabs 
+- Objects std and custom
+- global search
+-switch to lightning experience 
+- developer Console
+- setup ( any functionality ) 
+- application tab 
+- all Tabs ( in org all tabs are visible) customize tabs we can remove tab.
+- recycle bin ( 15 days and then will be deleted) 
+--------------------------------------------
+
+Applications : 
+
+App Exchange :  ( like Playstore on phone, developers create an application and we can buy and use these software to make functionalities easier ) 
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+DAY 0 Notes - 
+
+Objective :
+
+admin - reports n dashboard, data security, flow-(screen, record, schedule).
+dev - apex, lwc, lac 
+dev from scratch
+
+apex - OOPS, apex, trigger, test class, async apex
+Lightning Component - Aura, LWC 
+
+LwC - html, CSS, JS 
+LAC - 
+
+
+Integrationg - deployment
+
+integration, deployment, visualforce is outdated
+--------------------------------------------------------
+
+certification : 
+
+associate 
+admin
+app builder
+BA 
+PD1
+JavaScript1 
+
+----------------------------------------------------------------
+----------------------------------------------------------------
+
+DAY 1 NOTES 
+
+Introduction to saleforce, Developer Org Setup, Lightning Experience Navigation. 
+
+learn - Java, Html, Css, Javascript as Prerequisite to Salesforce 
+
+Business - sf - solution - market, service, sales, to all clouds.
+CRM 
+- with client and sales prospects 
+- cloud based access with anywhere 
+ -----------------------------------------
+Products available by salesforce - 
+
+Sales cloud  
+Service cloud
+marketing 
+commerce 
+sulesoft 
+tableau
+slack 
+platform 
+industries 
+safety 
+new zero 
+exleriences 
+thruth 
+success
+einstein AI 
+
+4 edition - prices, and functions 
+---------------------------------
+setup developer org : 
+
+developer . salesforce. com 
+signup 
+lightning experience navigation  
+frontend - application 
+backend - setup ( default ) 
+
+setup ( backup) - configuration and customization - applications - sales - sevice cloud 
+-------------------------------
+salesforce provides two versions - classic and lightning experience - things are divided into diff tabs - classic has diff UI - top right corner- switch to sf classic - UI of classic - app launcher - all info on single page - page centeric format - classic is component based. 
+
+which we need to prefer - classic is outdated - all are developed in L
+-------------------------------
+Standard and Console Navigation : 
+
+Standard navigation - open one tab at a time -  account is seen when opened - when contact is opened we see only contact -  
+
+Console navigation - open sales console application. In accounts we can open a contact - in contacts we can open a contact it will not close - we can switch between both tabs this is  Console navigation . 
+record will be kept open until we close. - 
+
+console is more useful than standard navigation. 
+
+which one to use will be decided by customer which one they want to use. 
+-----------------------------------
+
+company information and licensing : 
+
+setup - search - CI - find all details and licenses information - we can create 2 users one we can create by filling up the form which we did in the begining and second one we can create here. 
+------------------------------------- 
+
+Manage and Create Users : 
+
+
+search - users - new user - fill - created - select salesforce as a user - profile we can pick anything for now. ( Standard user )
+
+---------------------------------------- 
+
+Enable Login Button : 
+
+
+
+
+
+-----------------------------`````````````--------------------------------
+
+create dev edition org  
+

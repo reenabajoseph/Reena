@@ -1,0 +1,231 @@
+DAY 2 - SALESFORCE DATA MODEL, OBJECT, FIELD, RECORD, TAB, APP STANDARD VS CUSTOM.  
+
+
+Todays Agenda : 
+~~~~~~~~~~~~
+object , tab, field, record, app - what these are ?
+
+Database (XL) Table and Salesforce : 
+__________________________________
+
+Table - Object 
+Row   -  Record     ________
+Column - Field    |
+Data   - Value
+
+we need to create object then we create fields and with help of fields we can create records. 
+--------------------
+what is object ? 
+- Object is similar to a database table in Force.com platform. 
+- The platform comes with many standard objects like : Account, Contact, Case, Lead, Opportunity, etc.
+- Standard objects support default apps like Sales and Service. 
+- We can also create Custom objects as per the project. 
+---------------------
+
+BACKEND VIEWING of objects :
+
+Login in SF - Under Setup in OBJECT MANAGER we can see Standard objects - there TYPE is also mentioned as Standard Object - and there API NAME is Provided - this is viewing from backend of the application. 
+
+FRONT END VIEWING of objects : 
+
+If we want to view from the frontend we have to write the application name in search as Sales/ Service and we see the TABS and inside we also see its record. this is frontend viewing. 
+
+-----------------------
+
+Standard vs Custom Objects : 
+           
+                          Standard                Custom 
+
+Label                  Account                  Student 
+Plural Label       Accounts                Students 
+API Name           Account                 Student__c 
+
+3 things to keep in mind wrt Std and Custome objects : 
+
+Lable means name of the object. 
+Plural Label is used for Name of the Tab. 
+API name is unique name for the object. 
+api - ref obj in another tools like flow and apex. 
+
+---------------------------------- 
+
+TABS - 
+two tabs - std and console navigation
+home page of that particular tab appears - account tab click we can see account record 
+
+------------------------------------ 
+
+RecordType - FresherEmployed 
+
+Student ID
+Reg No
+Name
+Father Name
+Mother Name
+Phone
+Email
+Address
+Entrance Score
+Stream (Picklist)
+Salesforce Role (Picklist)
+Salesforce Skill Set (Multi-Picklist)
+Passout?
+Career Objective
+Brief Bio (Text Area Long)
+Resume (Text Area Rich)
+Lookup/Master-Detail to Class
+-------------------------------------------------
+Instructor
+Instructor ID
+Name
+Cloud Expertise
+Role Expertise
+Salary
+Bonus
+Years of Experience
+Salesforce Skill Set
+Lookup to Class
+--------------------------------------------------
+Class
+Name
+Course Duration
+Fees
+Total Students (Rollup)
+Highest Entrance Score
+Lowest Entrance Score
+Average Entrance Score
+--------------------------------------------------
+StdCls
+Lookup to Class
+Lookup to Student
+
+17:52
+--------------------------------------------------
+
+Student is object - 
+
+obj manager - Create object on right side - custom object - fill info - Label : Student, Plural Label: Students , Object Name : Student ; Description : This is a custom object which will store students data ; Record Name : Student ID ; Data Type : Auto Number ; S-{0000} , 1 ;  Deployed ; Launch new custom Tab ( checked ( automatically tab creation will be opened ) ; Save ; 
+
+Tab is created in the backend - and creation page will opened - select Student for object - Apply one tab visibility - Default ON - next - 
+
+Default ON : when we select it will be present in nav bar
+Default OFF : it wont show in nav bar but in App Launcher we can find under tab section. 
+Tab Hidden : Tab wont be accessable 
+
+-----------------
+
+Include TAB ( checked ) - Sales application - save 
+
+----------------- 
+created student object and its tab - in obj manager we can see api name __C , .... all info availabe - front end student tab is not available - refresh so it will pick the latest changes. 
+
+tab name is in plural - as tab contains lots of info so its in plural. 
+
+search for obj - obj manager - student obj will be seen - its custom object - we can also search - fields and relationships  we can see fields - 
+
+Home - search for Tabs - click on new - select object - 
+
+----------------------------------------------------------------------
+Instructor : 
+
+obj manager - create - custom obj - Instructor ; Instructors ; field is Instructor ID , auto number , I-{0000} ,1 , check box all check it , save - obj is createed - in home - tab - New - Instructor - next - all - sales applicatio - save 
+
+in tab page we have 5 diff tabs which we will be studying later. 
+
+------------------------------  
+
+this is tab creation in 2 different ways . 
+in frontend - we can see Instructor tab - Students tab - all and pin its blank boz no data. 
+
+we have learnt - std obj and cus obj and std tab and cus tab  
+
+1. Create Student Custom Object.
+      a. Field Student ID [Auto Number]
+2. Create Tab for Student Custom Object.
+3. Create Fields for Student Object
+      a. Name [Text (100)]|
+      b. Father Name Text (100)]
+      c. Mother Name [Text (100)]
+     d. Phone [Phone]
+      e. Email [Email]
+      f. Address [Text (250)]
+     g. Entrance Score [Number (5,2)]
+4. Create 'Sanjay Gupta Tech School' App
+5. Add Student Tab to above App.
+6. Launch App from App Launcher and Test.
+7. Create 5 Records for Student Object.
+8. Create Instructor Custom Object.
+    a. Field Instructor ID [Auto Number]
+9. Create a Tab for Instructor Custom App and Add it to Sanjay Gupta
+  Tech School App.
+10. Create Fields for Instructor Object:
+    a. Name [Text (100)]
+    b. Salary [Number(10,2)]
+    c. Year of Experience [Number (4)]
+11. Create 5 Records under Instructor Object.
+--------------------------------------------------------------------------------------
+
+
+FIELDS :  34:50
+
+column and headings are know as fields in database. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

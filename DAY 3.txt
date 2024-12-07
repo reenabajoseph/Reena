@@ -1,0 +1,23 @@
+RELATIONSHIP  : 
+
+1. Master detail relationship : MDR
+
+-Parents is required. if parent gets deleted child will also get deleted. 
+
+- parent will have multiple child but child will have only one parent. 
+
+- Relationship should always be created from child object. 
+
+-------------------------------------------------------
+2. lookup relationship :
+
+- if parent gets deleted it wont have any effect on the child, Parent is not required. 
+
+- parent ( account )
+
+ - Related list ( contact )
+child 1 
+child 2 
+child 3 
+
+------------------------------------------
