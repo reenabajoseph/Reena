@@ -1,0 +1,231 @@
+basics - 
+
+introduce yourself ? project you have created.
+
+flows
+
+triggers - finish it in 7 mins in interview ******* 
+
+apex,
+
+lwc ( imp ) standout and chance are more that u will get selected , 
+
+Project what u have done in lwc - ??
+
+user permission - explain atleast try it if u dont know - let the interview know what kind of approach u take. 
+
+-----------------------------------------------------
+
+resume if not proper format calls wont come. 
+
+upload same resume morning 
+
+certifications - you will get job 
+
+put experience above 2 years 
+
+------------------------------------------------------------------
+
+salesforce mentor - Walters954 
+
+mock dev interview : 
+
+universal containers company - 
+
+Q tell me about yourself 
+mid level developer - 5 years - starting at admin to worked as a hybrid admin and dev - certifications -last role in company i worked ? - i worked with vf, apex, aura components, time to learn best practices as sf dev - 
+
+R : when to use then and how to use - experience with VF and auro - front end ?? 
+
+- project has some VF pages and learnt that sf is moving away from VF and AURO components - learn upscale lwc *** - comfortable with what in lwc ? - rebuild this functionality - LWC i did in project - 
+
+R : task in lwc ?? some of the best practics of converting from VF to LWC what have you developed ?? 
+
+- .ccs files - i did styling sheets i used them - reusable componenets and build to our need - reading the existing code and develop it - 
+
+R : Apex controllers did u use them ??
+migrating vf to lwc lot of custom controller 
+
+R : apex background ?? 
+what task i did in - what comapany - Soql injection - best practics - implementing it - security issues  
+
+R : errors how u solved 
+- security issues were lot of learning - comeing up with solutions - time consuming - community members - cloud code academy - 
+
+R : apex best practics you have done 
+- soql, bind variables, avoiding for loops causes us to hit governor limits, 
+- trigger frame work - 1 trigger per class per object - apex 
+
+R: one trigger per object why is it a best practice ? 
+- sf doesnot not garantee which trigger would run first and it would cause complications in your org 
+- before or after - insert, delete, update, undelete. 
+- execution order is not controlled as much as we can control as dev we want to have one trigger per object - 
+
+R: before trigger and after trigger ? 
+before - throwing custom errors before the record is saved - updated with something 
+after - update related records or complex calculation. 
+
+R: let say we are working on a opportunity we need a validation on the opp products that if the products quanitity isn't greater than a certain amount. we need to built some sort of validation but we are not trying to do it in a declarative way so waht type of triiger we will do ? 
+
+i would use after trigger - displayed on child obj - we won't have access to child obj that u want to throw on the error for in after trigger so use custome error and use after trigger and on child obj when it meets the trigger 
+
+R: if we are on opportunity and check values on an opp line item before save the amount value on the opportunity. how will u write trigger for this.  
+- after trigger - i have to check ? senior developers will help - we dont expect everybody to know everything . 
+
+R: asynchronous apex how much are u exposed to ? worked ? 
+i have used future methods - in past - scenario - i have used queable. past offlate - junior or mid level developer - when its used - possible ways we can run a asynchronous mode - future method is not recomended by salesforce - 
+
+R : queable , batch , schedule, - when can we use those 
+
+future - when no dependancy - not waiting for the process to come back - send the response back 
+
+batchable - tones of data to process in batches - 200 is the sf limit - process of data in 200 chunkes of data
+
+schedulable - at what interval u want to use. UI we can - hourly basis - half an hour we have to do it apex way ********* - 
+
+queable way - we get a job id where we can track, able to change the jobs - get to track and chain it - chains of job that are there - 5 max jobs can be chained - 
+
+R: limit with chain is dependant on the org with your in - if its an enterprise org - trailhead org - dev org limits u done - 
+
+sandbox - what is sandbox ? 
+4 types of sandbox - 
+Dev , 
+Dev pro - used for development 
+partial- Ui 
+full sandbox- stanging evnironment 
+
+it depends on how your company wants to use your orgs. they have different capacities and starts from 200 to i GB to @ GB to full capacity 
+
+with regards to data : 
+
+data - dev, dev pro no data 
+partial - willhave partial just a subset
+full sandbox - will look exactly like your prodoc( production ) - used as staging environment so that you can be sure before putting out to prod that its going to work jsut like in staging environment 
+
+
+
+what is the process of how do u move metadata ?
+3 ways - 
+Primarliy worked  3 ways  chain set, org based dev model , packaged based model . 
+
+chain set based model - using internal sf chain set or get set chain sets which are like same - 
+there was org based dev model -> where in we also tried directly deply connected to org that u are connected - package dev model : xml, metadatas u want to transfero 
+
+R: are there any limitations to deploying things to production  ?
+with regards to chain set based model we need to have inbound outbound connection  - 
+inbound connections from prod so it accepts the deployments from your sandbox you need to have that 
+org based dev model - u jsut need to connect that org in your vs code so u can deploy that to your destination org 
+
+R: what abt your code is there any validation that needs to go on to get it moved around
+
+yes , for your code you need to have your test classes they should not be throwing any unhandled exceptions and you need to have  75% test coverage for apex classes.
+
+R:code coverage maintaining - *** work 
+
+R: testing what is exp with testing ? best practices?
+started as manual tester - moved to become automation tester - write code to test the code - apex testing is i was passitionate about and want to know more about - i have been writing aout test classes thoughthe standard 
+75% is expected i alwyas endeavor to have higher test code coverage and then make sure it goes i create test it such a way it touches the parts of code where in it tested fully we dont receive bad news from there prod saying that u jsut pos happy parts and you dint test the negative parts and then some how it slipped from final testing and we have an issue form the prod. 
+
+R:  is there any types of things u wnat to have in your code when u writeing. structure code . 
+
+to create a test i would use like 3 std ways - to create test data. 
+directly create in your test data
+test class test setup test data factory the utility class 
+
+to use test data factory - so that the test data is availabel throughtout - 
+if used test setup - is availabe for test classes and gives adv but depends on the scenarion. and we can see all data true that s not recommended. 
+
+R: what kind of code u write so ur cod is doing what it supoose to do.
+
+in test method i woould call the method that is tested and use assert sayiig is it so now i am calling this method assert this is what the expected result  and doing its job or not. 
+
+R: it svery imp to all codes are working has those asserts values and holding the high standards of least making sure we have a search for everything - **** - to bring into the team and how everything works  **********
+
+R: Integration any exp working with it ? 
+regards to integrations my exposure is basic but i do understand how integration work and then like what are the moving parts . in my org when it came to integration they used mule soft. apex coding or intedration or inhouse coding that was needed, there were scenarios we ahve to implement apex classes that did the  callout the u were like simple get and post methods . i have a fair idea of integrations an testing them we used Mocha callout mock __ wont be able to make calls 
+
+mulesoft why an org would choose use a middleware or an integration tool like mulesoft vs building it out themselves in apex ?? 
+
+best would be organization specific. in my org they choose to use mule soft instead of developing integrations in house - cost part is involved - time to market - so to do things quickly - so they choose clicks over code maintability - when these kinds of complex integrations they need a senior dev who has experience to handle these situvations as last company was the insurance domain so these were like sensitive things hat needed to be perfectly with no loopholes so just for the business reasons instead of relying in house sf seniour sf developers chose to use mule soft which proved easier way to do these integrations to avoid complexity at that stage. 
+
+
+
+boz add in a lot of features and functionality - unlimited budged and do what ever u want to build this out in sf - how would u design in your head - no need to go in detail but give me a high level how sf would work with the other system - so i would start out with somthing simple build us TDD approach where i would write test classes first and then try work out basic functionality first.
+
+i would use get something from the external system and see that it is a coming into sf in an expected format so would use something like json caliz just going to 35:35 
+detail here serialize and deserialize the kind of data i am gettin from the external systems and for updating data to the external system i would use post or put methods and then see how that is working out and then defnetly in sandbox test it out and make sure if test work i would move it to full sandbox at last and how things work then in staging environment i would be confident to moving it to Prod. 
+
+R : do u have any questions about universal containers how we work or anything ? 
+breif of team structure and understand more abt uni cont with regards to tools and work culture within the team and what are the expectations for person on boarding as a junior or a mid level dev and i would like to understand and immedeate expectations and long term expectiations down the line and from the role 
+---- overview of universal containser diff customers globally and maintain all of the information org it is our source of truth for all of everything that we are selling the orders get prcessed through 3 rd system here integration go along with it . background of this integration will help that she spoke . 
+1 seniou dev 
+1 sf mangar sits above the entire team i under them 
+2 admins 
+colaboratively work together and more admins devs lot of work to be done - junior mid level role - daily standup meetings - synchronized - different task done for the day - week task - completely goals - 
+
+expectations - short term its wrapping head aroung org helping out with test classes and the smaller projects lined up 
+long term - owing certain sections - integrations , order automations, backend automations , sorted looking for somebody specializing in those areas and changes need to happen 
+continue to change 
+
+many i know the combination of tools that you use in your team ? 
+visual studio code 
+AI tools - upto date with that
+sandbox structure - individual sandbox and moving to production 
+tools - github to store all repository all metadata in repository and org structure and we have some GitHub actiosn and automated process and do a review of metadata to make sure everything is up to diff standards that we have put in our metadata 
+slack and zoom for conversations 
+-------------------
+
+is there like flexibility to choose different ID s in the same team ?
+up to u to decide - different IDs - i would use illumniated cloud ? but why ? 
+why would you choose IDE over Visual studio code ? nothing wrong just curious - i think the autocomplete is much better in illuminatedcloud and the UI and the kind of tools that integrate with jet Frams is seamless compared to VSC . end user experience i would prefer this over VSC. 
+
+different IDEs. ? 
+
+- -------------------------
+
+do u have any Q - not at this stage 
+
+--------------------------- 
+
+42: 54 - how did u get that implemented in team - support team use classic and move entire support team that rebuild and lightning as a business analyst i - process and UI and jumped in and understood the gap - helped to have there move form classic to lightning as they dint understand the potential of lightning - also gave some thing to compare with build for finance department and they had a starting point and how better it can get and they could have a test drive - not that comfortable as they were so used to what they were doing . 
+
+---------------------------
+
+ R: what is the significant challenge when writing the code and how did u over came that ? wht is the situvation / task at work plac e
+
+situvation where we also had over board with file storge it was at 187% so we had to bring it down to 100% to avoid overusage fees boz sf was taxing heavily and also that something that we have to be done we used a tool called ownback up which is called own where we could set up the policies to archive the data and my job was to tell lead what objects can be archived and if i archieve these objects how muchwill i be saved and exactly the number of size of the data per year so she wanted ansers something like so if i archived content documents of account i saved some thing called 5 gb for 2122 year so that was a huge review and anaylsis and implemented the archieve polices on own and i set up some test archieve where in test archived but we dint know that when salesforce actually deleted field taht is set to you true so when we archieve it is recreating its not like it is creating like brand new and restored form recycling . in tis scenario these were the test records i got archieven and unarchived - all these case records when they got unarchived ran through the case assignment rule it wasnt restoring the case owner was last assigned when the archiving the case itsead it was assigning the owner as per the case assignment rule so we had to come up with the trigger after undelete we could not do that as sf did not do that . what do we do in tis case ? 
+
+unfortunately i had to finish up with but i would love to understand how to resolve that issue and 
+archieve and unarchieve the records using backup -------*** 
+
+if u had to gueess or make some assumptions what would u do how do u thing tried to solve ?
+
+explored more after undelete and then make sure i restore the case owner what it was before it got deleted./ archieved 
+R : do u ahve any last min questions for me ?
+i think u have answered al the techinal questions i would like to understand bit more about company with regards to work arrangements and felxibility 
+R: hybrid type of policy 2 days out of the week - work remotel - they see the value of salesforce how it reconnects with rest of the organization for lot of automations and things we do and from that standpoint making sure ditital transformation . 
+
+thankyou so much for your time - hr will get back to you soon - 
+
+
+
+===================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
